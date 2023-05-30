@@ -37,7 +37,7 @@ app.UseCors("CorsPolicy");
 
 app.UseRouting();
 
-app.UseEndpoints(endpoints => { endpoints.MapHub<ParamHub>("/telemetryHub"); });
+app.UseEndpoints(endpoints => { endpoints.MapHub<ParamHub>("/demoHub"); });
 
 app.Run();
 

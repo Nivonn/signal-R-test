@@ -21,7 +21,7 @@ export class AppComponent implements OnInit,OnDestroy {
 
     const url = "http://localhost:5023/";
     this.hubConnection = new HubConnectionBuilder()
-    .withUrl(url + "telemetryHub")
+    .withUrl(url + "demoHub")
     .build();  
 
     this.hubConnection.on('UpdateParam',(dto: TelemetryParameterUtcDto) => {console.log(dto)});
